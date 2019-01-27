@@ -9,8 +9,10 @@ C，mongodb数据库：mongodb是一个面向文档的非关系型数据库，�
 
 D，实现和效果：下面要介绍的是使用nodejs实现的即时聊天室，主要用到的是websocket协议，数据库中存放用户民和密码。首先服务器打开一个socket端口3000开始监听客户端的连接，接着客户端浏览器建立socket连接，用户登录时填写用户名和密码，服务器端查询mongodb数据库验证用户名和密码是否正确，用户登录聊天室后可以开始发送消息给其它在线的用户。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190127142140350.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTA2MzMyNjY=,size_16,color_FFFFFF,t_70)
+###### 登录页面（账号：123；密码：456）
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190127142958327.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTA2MzMyNjY=,size_16,color_FFFFFF,t_70)
 
-登录之后
-
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2019012714222489.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTA2MzMyNjY=,size_16,color_FFFFFF,t_70)
+###### 登录之后有两个tab页，Users用户（一对一聊天），Rooms房间(多对多聊天)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190127143205818.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTA2MzMyNjY=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190127143231537.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTA2MzMyNjY=,size_16,color_FFFFFF,t_70)
+GitHub地址：https://github.com/BothEyes1993/ChatRoom
