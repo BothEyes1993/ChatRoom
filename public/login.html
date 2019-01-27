@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<title>Login</title>
+<link rel='stylesheet' href='/stylesheets/style.css'></link>
+</head>
+<body>
+
+<div class="chat-Contain chat-login-form">
+<form id="chatLoginForm" action="login" method="post">
+<p class='form-login-title'>Login In</p>
+<p><span class='form-login-span'>用户名: </span><input type='text' name='name' id='name' value='123'></input></p>
+<p><span class='form-login-span'>密码: </span><input type='text' name='password' id='password' value='456'></input></p>
+<p><input class='form-login-btn' type='submit' name='submit' value='登陆'></input></p>
+
+</form>
+</div>
+
+<script src='javascripts/js/socket.io.js' type='text/javascript'></script>
+<script src='javascripts/jquery-1.7.2.min.js' type='text/javascript'></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+"name":"chatrooms",
+"version":"0.0.1",
+"description":"Minimalist multiroom chat server",
+"dependencies":{
+"express":"2.5.1",
+"socket.io": "^1.4.5",
+"mime":"~1.2.7",
+"mongodb":"0.9.9"
+}
+
+}

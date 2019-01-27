@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang='en'>
+<head>
+	<title>Chat</title>
+	<link rel='stylesheet' href='/stylesheets/style.css'></link>
+</head>
+<body>
+
+	<div id="chatContain" class="chat-Contain">
+		<!-- 用户基本信息DIV BEG -->
+		<div id='userInfoId' class='user-info-class '>
+			<p><span>当前用户 : </span><span class='user-name-span'></span></p>
+			<p><a href='javascript:;' class='user-logout'>退出</a></p>
+		</div>
+
+		<!-- 用户和房间列表DIV BEG -->
+		<div id="listUrChat" class="chat-Contain-cont">
+			<div class="chat-cont-title">
+				<ul id="chatUlId" class="chat-tab-ul">
+					<li class="chatTabLi userTab" tabDiv="userDivId"><span>Users</span></li>
+					<li class="chatTabLi roomsTab" tabDiv="roomsDivId"><span>Rooms</span></li>
+				</ul>
+			</div>
+
+			<div id="userDivId" class="chat-cont-body"></div>
+			<div id="roomsDivId" class="chat-cont-body"></div>
+		</div>
+
+		<!-- 聊天DIV BEG -->
+		<div id='detailDivChat' class='chat-Contain-cont'>
+			<div class='chat-cont-title'><span class='title-back'>back</span><span class='title-cont'></span></div>
+			<div class='chat-cont-body'>
+				<div id="chatUserMessaList"></div>
+				<form id='send-form'>
+					<input id='send-message'/>
+					<input id='send-button' type='submit' value='Send'/>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src='javascripts/js/socket.io.js' type='text/javascript'></script>
+	<script src='javascripts/jquery-1.7.2.min.js' type='text/javascript'></script>
+	<script src='javascripts/chat.js' type='text/javascript'></script>
+	<script src='javascripts/chat_ui.js' type='text/javascript'></script>
+</body>
+</html>
